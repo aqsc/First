@@ -1,0 +1,20 @@
+package testDataStream;
+
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class TestDataStream {
+
+	public static void main(String[] args) throws IOException{
+		// TODO Auto-generated method stub
+		try(
+				DataOutputStream output =
+				new DataOutputStream(new FileOutputStream("temp.data"));
+		){
+			output.writeUTF("John");
+		}
+
+	}
+
+}

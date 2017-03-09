@@ -1,0 +1,26 @@
+package mediaDemo01;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+public class MediaDemo extends Application{
+	
+	public final String MEDIA_URL = 
+			"http://cs.armstrong.edu/liang/common/sample.mp4";
+	
+	@Override public void start(Stage primaryStage){
+		Media media = new Media(MEDIA_URL);
+		
+		
+		
+		BorderPane pane = new BorderPane();
+		Scene scene= new Scene(pane);
+		primaryStage.setTitle("MediaDemo");
+		primaryStage.setScene(scene);
+		primaryStage.show();
+		
+	}
+
+}
