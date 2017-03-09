@@ -1,0 +1,7 @@
+package mediaDemo01;
+
+import javafx.application.Application;
+
+public class MediaDemo extends Application{
+
+}
